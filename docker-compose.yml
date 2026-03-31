@@ -1,6 +1,6 @@
 services:
   chrome-cdp:
-    build: .
+    image: ghcr.io/enefry/chrome-cdp-novnc:latest
     container_name: chrome-server
     ports:
       - "127.0.0.1:9600:6080"
