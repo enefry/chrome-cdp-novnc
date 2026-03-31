@@ -1,0 +1,20 @@
+services:
+  chrome-cdp:
+    build: .
+    container_name: chrome-server
+    ports:
+      - "127.0.0.1:9600:6080"
+      - "127.0.0.1:9601:9223"
+    volumes:
+      - ${PWD}/data/chrome:/data/chrome-profile
+    shm_size: '2gb'
+    environment:
+      - SCREEN_WIDTH=1280
+      - SCREEN_HEIGHT=840
+    healthcheck:
+      test: ["CMD", "python3", "-c", "import sys, urllib.request; urllib.request.urlopen('http://127.0.0.1:9222/json/version', timeout=5); sys.exit(0)"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 45s
+    restart: always

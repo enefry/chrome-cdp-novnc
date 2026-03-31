@@ -1,0 +1,20 @@
+chrome-cdp-novnc
+Copyright 2026
+
+This repository is licensed under the Apache License 2.0.
+
+The Apache-2.0 license applies to the original source code, scripts,
+configuration, workflow files, and documentation contained in this repository.
+
+This repository and the container images built from it may include or install
+third-party software components. Those third-party components remain subject to
+their own respective licenses, notices, redistribution terms, and trademark
+restrictions.
+
+In particular, the license for this repository does not replace, override, or
+relicense any third-party software bundled, installed, or referenced by the
+container image.
+
+Users distributing container images built from this repository are responsible
+for reviewing and complying with the license obligations of included third-party
+software.

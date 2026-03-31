@@ -1,0 +1,11 @@
+[app] (class=Chromium)
+  [Deco] {NONE}
+  [Maximized] {yes}
+  [FocusHidden] {yes}
+[end]
+
+[app] (class=Google-chrome)
+  [Deco] {NONE}
+  [Maximized] {yes}
+  [FocusHidden] {yes}
+[end]
